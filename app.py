@@ -647,3 +647,9 @@ def test_email():
 
 
 
+
+if __name__ == '__main__':
+    # Initialize database on first run
+    from scripts.init_db import init_db
+    init_db()
+    app.run(debug=True)
